@@ -1,0 +1,11 @@
+---
+Device: EP1122
+VendorID: "0x00000002"
+VendorName: Beckhoff Automation GmbH & Co. KG
+PID: "0x04624052"
+Description: Beckhoff EP1122-0001 2 port EtherCAT junction
+DocumentationURL: https://www.beckhoff.com/EP1122-0001
+DeviceType: System Terminals
+Notes: "Passive device"
+TestingStatus: ""
+SrcFile: src/devices/lcec_passive.c

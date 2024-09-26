@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="single-header">
+  <h1 class="title">{{ .Site.Title }}</h1>
+  <p>
+    <a href="/">Back</a>
+  </p>
+</div>
+
+<section id="index">
+  <h2 style="text-align: center;">List of all pages</h2>
+  <ul>
+    {{ range .Data.Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        {{ .Page.File.LogicalName }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+<div class="single-footer">
+  <p>
+    <a href="/">Back</a>
+  </p>
+</div>
+{{ end }}

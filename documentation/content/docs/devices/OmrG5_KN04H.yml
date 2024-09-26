@@ -1,0 +1,11 @@
+---
+Device: OmrG5_KN04H
+VendorID: "0x00000083"
+VendorName: Omron
+PID: "0x00000007"
+Description: Omron R88D-KN04H-ECT G5 Series ServoDrive/Motor
+DocumentationURL: http://www.ia.omron.com/
+DeviceType: Servo Drive
+Notes: ""
+SrcFile: src/devices/lcec_omrg5.c
+TestingStatus: ""

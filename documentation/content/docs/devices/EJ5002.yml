@@ -1,0 +1,11 @@
+---
+Device: EJ5002
+VendorID: "0x00000002"
+VendorName: Beckhoff Automation GmbH & Co. KG
+PID: "0x138a2852"
+Description: Beckhoff EJ5002 2Ch. SSI Encoder
+DocumentationURL: http://www.beckhoff.com/EJ5002
+DeviceType: Encoder Input
+Notes: ""
+SrcFile: src/devices/lcec_el5002.c
+TestingStatus: ""

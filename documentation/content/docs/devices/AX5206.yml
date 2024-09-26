@@ -1,0 +1,11 @@
+---
+Device: AX5206
+VendorID: "0x00000002"
+VendorName: Beckhoff Automation GmbH & Co. KG
+PID: "0x14566012"
+Description: Beckhoff AX5206-0000-0214 EtherCAT Drive (SoE, 2 Ch.)
+DocumentationURL: http://www.beckhoff.com/ax52xx/
+DeviceType: Servo Drive
+Notes: ""
+SrcFile: src/devices/lcec_ax5200.c
+TestingStatus: ""

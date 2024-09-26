@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<div class="single-header">
+  <h1 class="title">{{ .Site.Title }}</h1>
+  <p>
+    <a href="/">Back</a>
+  </p>
+</div>
+
+<section id="single">
+  <h1 class="title">{{ .Title }}</h1>
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+  <div style="text-align: right;">
+    This site is open source. <a href="https://github.com/linuxcnc-ethercat/linuxcnc-ethercat/edit/master/documentation/doc-site/content{{
+  .Page.Path}}.{{ .Page.File.Ext}}" _target="blank">Improve this page.</a>
+  </div>
+
+</section>
+
+<div class="single-footer">
+  <p>
+    <a href="/">Back</a>
+  </p>
+</div>
+
+{{ end }}

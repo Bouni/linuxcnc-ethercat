@@ -1,0 +1,18 @@
+{{ $original := .Page.Resources.GetMatch (.Get "src") }}
+{{ $image := $original.Resize (.Get "width" | default "800x") }}
+<figure class="figure m-1">
+    <a href="{{ $original.RelPermalink }}" data-featherlight="image">
+        <img src="{{ $image.RelPermalink }}" class="figure-img img-thumbnail {{ if .Get "class" }}{{ .Get "class" }}{{ end }}" width="{{ $image.Width}}" alt="{{ if .Get "alt" }}{{ .Get "alt" }}{{ end }}">
+    </a>
+    {{ if .Get "caption" }}
+    <figcaption class="figure-caption">
+        {{ if .Get "link" }}
+        <a href="{{ .Get "link" }}" traget="_blank">
+        {{ end }}
+        {{ .Get "caption" }}
+        {{ if .Get "link" }}
+        </a>
+        {{ end }}
+    </figcaption>
+    {{ end }}
+</figure>
